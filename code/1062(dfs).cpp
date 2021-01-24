@@ -36,24 +36,24 @@ void step1(){
 }
 
 void dfs(int index){
-//	1. Ã¼Å©ÀÎ                                visited[0-25] = { a, ... , z}
+//	1. ì²´í¬ì¸                                visited[0-25] = { a, ... , z}
 	visited[index]=true;
 	selectedCount++;
-//	2. ¸ñÀûÁöÀÎ°¡?                         selectCount ==  K -> ÃÖ´ë°³¼ö °è»ê
+//	2. ëª©ì ì§€ì¸ê°€?                         selectCount ==  K -> ìµœëŒ€ê°œìˆ˜ ê³„ì‚°
 	if(selectedCount==K){
 		result=max(countWords(),result);
 	}
 	else{
-		//	3. °¥ ¼ö ÀÖ´Â °÷À» ¼øÈ¸              for( 0 ~ 25)
+		//	3. ê°ˆ ìˆ˜ ìˆëŠ” ê³³ì„ ìˆœíšŒ              for( 0 ~ 25)
 		for(int i=index+1;i<26;i++){
-			//	4. °¥¼öÀÖ´Â°¡?                                if(visited[] ==false)
+			//	4. ê°ˆìˆ˜ìˆëŠ”ê°€?                                if(visited[] ==false)
 			if(visited[i]==false){
-				//	5. °£´Ù DFS(NEXT)                                dfs(next)
+				//	5. ê°„ë‹¤ DFS(NEXT)                                dfs(next)
 				dfs(i);
 			}
 		}
 	}
-	//	6. Ã¼Å©¾Æ¿ô                             visited[] = false
+	//	6. ì²´í¬ì•„ì›ƒ                             visited[] = false
 	visited[index]=false;
 	selectedCount--;
 }
