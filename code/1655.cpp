@@ -16,7 +16,7 @@ int main(){
 		}
 		else{
 			comp=max_pq.top();
-		//MaxHeap∞˙ ∫Ò±≥«ÿ ≈´ ∞™¿∫ minheap¿∏∑Œ ¿€¿∫ ∞™¿∫ maxheap¿∏∑Œ 
+		//MaxHeapÍ≥º ÎπÑÍµêÌï¥ ÌÅ∞ Í∞íÏùÄ minheapÏúºÎ°ú ÏûëÏùÄ Í∞íÏùÄ maxheapÏúºÎ°ú 
 			if(temp>comp){
 				min_pq.push(temp);
 			}
@@ -24,10 +24,10 @@ int main(){
 				max_pq.push(temp);
 			}
 		}
-		//ªÁ¿Ã¡Ó ∫Ò±≥
+		//ÏÇ¨Ïù¥Ï¶à ÎπÑÍµê
 		int sizeMaxHeap=max_pq.size();
 		int sizeMinHeap=min_pq.size(); 
-		if(sizeMaxHeap==sizeMinHeap){//≈©±‚∞° ∞∞¿∏∏È maxheap≤® 
+		if(sizeMaxHeap==sizeMinHeap){//ÌÅ¨Í∏∞Í∞Ä Í∞ôÏúºÎ©¥ maxheapÍ∫º 
 			printf("%d\n",max_pq.top()); 
 		}
 		else if(sizeMaxHeap-sizeMinHeap==1){
