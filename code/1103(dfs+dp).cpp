@@ -43,7 +43,7 @@ int main(){
 		for(int j=0;j<M;j++){
 			cin>>temp;
 			if(temp=='H')
-				board[i][j]=0; // ±¸¸Û(H)Àº 0·Î Ç¥½Ã 
+				board[i][j]=0; // Â±Â¸Â¸Ã›(H)Ã€Âº 0Â·ÃŽ Ã‡Â¥Â½Ãƒ 
 			else
 				board[i][j]=temp-48;
 		}
