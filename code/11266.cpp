@@ -29,7 +29,7 @@ int dfs(int cur,bool isRoot){
 		if(!isRoot && prev>=numbering[cur]){
 			cut[cur]=true;
 		}
-		ret=min(ret,prev); // ´Ù½Ã ¿ø·¡ ¹æ¹®¹øÈ£·Î 
+		ret=min(ret,prev); // Â´Ã™Â½Ãƒ Â¿Ã¸Â·Â¡ Â¹Ã¦Â¹Â®Â¹Ã¸ÃˆÂ£Â·ÃŽ 
 	}
 	if(isRoot && child>=2){
 		cut[cur]=true;
