@@ -12,9 +12,9 @@ vector<pair<int,int> > home;
 vector<pair<int,int> > chicken;
 
 void dfs(int chickenNum,int chickenCnt){
-	//Ä¡Å² ÁöÁ¡ÀÇ ¼ö°¡ ÃÊ°ú 
+	//ì¹˜í‚¨ ì§€ì ì˜ ìˆ˜ê°€ ì´ˆê³¼ 
 	if(chickenNum>chicken.size()) return;
-	//M°³ÀÇ Ä¡Å²ÁıÀÌ Á¤ÇØÁö¸é
+	//Mê°œì˜ ì¹˜í‚¨ì§‘ì´ ì •í•´ì§€ë©´
 	if(chickenCnt==M){
 		int close_ans=0;
 		int temp=home.size();
@@ -34,10 +34,10 @@ void dfs(int chickenNum,int chickenCnt){
 		result=min(result,close_ans);
 		return ;
 	} 
-	//Ä¡Å²Áı cntÁöÁ¡ µé¸±‹š
+	//ì¹˜í‚¨ì§‘ cntì§€ì  ë“¤ë¦´Â‹Âš
 	issued[chickenNum]=true;
 	dfs(chickenNum+1,chickenCnt+1);
-	//Ä¡Å²Áı cntÁöÁ¡ ÆĞ½ºÇÒ¶§
+	//ì¹˜í‚¨ì§‘ cntì§€ì  íŒ¨ìŠ¤í• ë•Œ
 	issued[chickenNum]=false;
 	dfs(chickenNum+1,chickenCnt);
 }
