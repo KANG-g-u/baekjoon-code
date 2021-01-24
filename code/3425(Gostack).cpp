@@ -13,7 +13,7 @@ int main(){
 	int T;
 	ll result=0;
 	int i=0, j=0, cnt=0,num_cnt=0;
-	//¸í·É¾î ¹Þ±â 
+	//ëª…ë ¹ì–´ ë°›ê¸° 
 	while(1){
 		while(1){
 		cin>>command[i];
@@ -28,7 +28,7 @@ int main(){
 		}
 		i++;
 	}
-	cnt--;//END ¸í·É¾î »©ÁÖ±â 
+	cnt--;//END ëª…ë ¹ì–´ ë¹¼ì£¼ê¸° 
 	cin>>T;
 	ll temp;
 	for(int k=0;k<T;k++){
