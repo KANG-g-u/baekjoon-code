@@ -26,7 +26,7 @@ int main(){
 		}
 	}
 	sort(word_cnt,word_cnt+26,cmp);
-	int word_num=9;//е╚╪Ж╨нем 9 
+	int word_num=9;//ц┘б╚б╪ц╤б╨ц▌ц┘ц█ 9 
 	for(int i=0;i<9;i++){
 		//printf("%d  ",word_cnt[i]);
 		result=result+word_cnt[i]*word_num;
