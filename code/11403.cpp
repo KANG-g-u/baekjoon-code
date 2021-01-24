@@ -20,11 +20,11 @@ void FloydWarshall(){
 
 int main(){
 	cin>>N;
-	//graph �Է� 
+	//graph 입력 
 	for(int i=0;i<N;i++)
 		for(int j=0;j<N;j++)
 			cin>>graph[i][j];
-	//�÷��̵�ͼ� �˰����� ���� 
+	//플로이드와샬 알고리즘 응용 
 	FloydWarshall(); 
 	for(int i=0;i<N;i++){
 		for(int j=0;j<N;j++){
